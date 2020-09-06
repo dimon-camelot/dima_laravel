@@ -23,3 +23,9 @@ Route::get('/', function (){
 Route::get('/post/{id}', 'PostController@post')->name('show_post');
 
 Route::get('/list', 'PostController@list')->name('show_list');
+
+Route::get('/test', function (){
+   \DB::table('posts')
+       ->where('id', 11)
+       ->delete();
+});
