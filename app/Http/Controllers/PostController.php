@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -13,14 +15,14 @@ class PostController extends Controller
 
     public function post($id)
     {
-        $post = \DB::table('posts')->where('id', '=', $id)->get()->first();
-
-        if (!$post) {
-            abort(404);
-        }
+        $post = Post::findOrFail($id);
+        $category = $post->category;
+        $comments = $post->comments;
 
         return view('post', [
-            'post' => $post
+            'post' => $post,
+            'category' => $category,
+            'comments' => $comments
         ]);
     }
 

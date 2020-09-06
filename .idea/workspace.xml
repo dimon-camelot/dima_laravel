@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaf31ead-bcc8-437a-ac30-14dd21d90d28" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_06_095645_create_posts_table.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -138,6 +137,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -169,12 +169,32 @@
       <workItem from="1599201695566" duration="143000" />
       <workItem from="1599311363270" duration="2504000" />
       <workItem from="1599379692019" duration="12280000" />
-      <workItem from="1599403245695" duration="1081000" />
+      <workItem from="1599403245695" duration="7669000" />
     </task>
+    <task id="LOCAL-00001" summary="Исправление косячков">
+      <created>1599404596968</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1599404596968</updated>
+    </task>
+    <task id="LOCAL-00002" summary="идем дальше">
+      <created>1599405892185</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1599405892185</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Исправление косячков" />
+    <MESSAGE value="идем дальше" />
+    <option name="LAST_COMMIT_MESSAGE" value="идем дальше" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599160524475">
@@ -189,10 +209,14 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="402" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1599389349649" />
-    <state x="346" y="223" key="NewPhpClassDialog" timestamp="1599160623854">
+    <state x="234" y="1" key="CommitChangelistDialog2" timestamp="1599405891762">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="346" y="223" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1599160623854" />
+    <state x="234" y="1" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1599405891762" />
+    <state x="346" y="223" key="NewPhpClassDialog" timestamp="1599406487357">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="346" y="223" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1599406487357" />
     <state x="461" y="330" key="NewPhpFileDialog" timestamp="1599315419281">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
@@ -201,13 +225,17 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="109" y="31" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1599150063235" />
-    <state x="306" y="157" width="667" height="486" key="find.popup" timestamp="1599160761223">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1599404599747">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="306" y="157" width="667" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1599160761223" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1599394775877">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1599404599747" />
+    <state x="306" y="157" width="667" height="486" key="find.popup" timestamp="1599410097848">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1599394775877" />
+    <state x="306" y="157" width="667" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1599410097848" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1599410111844">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1599410111844" />
   </component>
 </project>

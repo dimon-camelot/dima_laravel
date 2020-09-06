@@ -27,7 +27,7 @@ class AppServiceProvider extends ServiceProvider
         \View::composer('layout', function ($view) {
             $posts = \DB::table('posts')
                 ->limit(5)
-                ->orderByDesc('date')
+                ->orderByDesc('created_at')
                 ->get();
             $view->with('posts', $posts);
         });
