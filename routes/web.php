@@ -15,8 +15,11 @@
 //    return view('layout');
 //});
 
-Route::get('/', 'PostController@welcome');
 
-Route::get('/post{id}', 'PostController@post');
+Route::get('/', function (){
+    return view ('welcome');
+});
 
-Route::get('/list', 'PostController@list');
+Route::get('/post/{id}', 'PostController@post')->name('show_post');
+
+Route::get('/list', 'PostController@list')->name('show_list');

@@ -1,6 +1,6 @@
 @extends('layout')
 
-<?php $post = $post->first();?>
+
 
 @section('content')
     <h4>{{$post->title}}</h4>

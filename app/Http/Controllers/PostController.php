@@ -13,10 +13,10 @@ class PostController extends Controller
 
     public function post($id)
     {
-        $post = \DB::table('posts')->where('id', '=', $id)->get();
+        $posts = \DB::table('posts')->where('id', '=', $id)->get()->first();
 
         return view('post', [
-            'post' => $post
+            'post' => $posts
         ]);
     }
 
