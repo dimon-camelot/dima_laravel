@@ -1,6 +1,8 @@
 <?php
 
-namespace App;
+
+namespace App\Models;
+
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,7 +12,4 @@ class Category extends Model
 
     protected $primaryKey = 'id';
 
-    public function posts() {
-        return $this->hasMany('App\Post', 'category_id');
-    }
 }
