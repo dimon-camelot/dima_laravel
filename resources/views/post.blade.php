@@ -10,6 +10,6 @@
     <hr>
     <p>Комментарии</p>
     @foreach($comments as $comment)
-    {{$comment->author}}, {{$comment->created_at}}, {{$comment->body}}
+    {{$comment->author}}<br>{{$comment->created_at}}<br>{{$comment->body}}<br><br>
     @endforeach
 @endsection
