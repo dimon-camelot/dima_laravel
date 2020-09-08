@@ -25,3 +25,5 @@ Route::get('/post/{id}', 'PostController@post')->name('show_post');
 Route::get('/list', 'PostController@list')->name('show_list');
 
 Route::get('/test', 'TestController@show');
+
+Route::post('/post/{id}/add_comment', 'PostController@add_comment')->name('add_comment');

@@ -13,6 +13,13 @@
     {{$comment->author}}<br>
     {{$comment->body}}<br>
     @endforeach
+    <hr>
+    <p>Новый комментарий:</p>
+    <form method="post" action="/post/{{$post->id}}/add_comment">
+        <input name="author" placeholder="Имя автора"><br>
+        <input name="body" type="text" placeholder="Текст комментария"><br>
+        <input type="submit">
+    </form>
 
 
 @endsection

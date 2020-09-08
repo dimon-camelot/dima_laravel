@@ -40,4 +40,15 @@ class PostController extends Controller
             'list' => $list
         ]);
     }
+
+    public function add_comment ($id)
+    {
+       $comment = new Comment();
+       $comment->post_id = $id;
+       $comment->author = $_POST['author'];
+       $comment->body = $_POST['body'];
+       $comment->save();
+
+       return redirect("/post/$id");
+    }
 }
