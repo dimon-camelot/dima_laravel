@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Category;
-use App\Post;
+
+use App\Models\Category;
+use App\Models\Comment;
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -15,47 +17,27 @@ class PostController extends Controller
 
     public function post($id)
     {
-        $post = Post::findOrFail($id);
-        $category = $post->category;
-        $comments = $post->comments;
+        $post = Post::query()->find($id);
 
-        return view('post', [
-            'post' => $post,
-            'category' => $category,
-            'comments' => $comments
-        ]);
+        if (is_null($post)) {
+            abort(404);
+        }
+
+        $category = $post->myCategory;
+        $comments = $post->myComments;
+
+        return view('post')
+            ->with('post', $post)
+            ->with('category', $category)
+            ->with('comments', $comments);
     }
 
     public function list()
     {
-        $list = \DB::table('posts')->get();
+        $list = Post::query()->get();
 
         return view('list', [
             'list' => $list
         ]);
     }
 }
-
-//class LayoutController extends Controller
-//{
-//    public function showAll()
-//    {
-//        $tasks = \DB::table('tasks')->get();
-//
-//        return view('tasks_all', [
-//            'tasks' => $tasks
-//        ]);
-//
-//    }
-//
-//    public function showSingle ($id)
-//    {
-//        $task = \DB::table('tasks')
-//            ->find($id);
-//
-//        return view('task_single', [
-//            'task' => $task
-//        ]);
-//
-//    }
-//}

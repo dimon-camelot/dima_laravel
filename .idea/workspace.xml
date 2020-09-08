@@ -1,26 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaf31ead-bcc8-437a-ac30-14dd21d90d28" name="Default Changelist" comment="">
+    <list default="true" id="eaf31ead-bcc8-437a-ac30-14dd21d90d28" name="Default Changelist" comment="super ultimate commit 3000">
+      <change afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Models/Post.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Comment.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_06_161544_create_comments_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/post.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +21,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution />
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -47,6 +41,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -141,17 +136,22 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views" />
     </key>
@@ -179,7 +179,10 @@
       <workItem from="1599201695566" duration="143000" />
       <workItem from="1599311363270" duration="2504000" />
       <workItem from="1599379692019" duration="12280000" />
-      <workItem from="1599403245695" duration="7669000" />
+      <workItem from="1599403245695" duration="7796000" />
+      <workItem from="1599422616900" duration="681000" />
+      <workItem from="1599481311563" duration="1465000" />
+      <workItem from="1599495229778" duration="6706000" />
     </task>
     <task id="LOCAL-00001" summary="Исправление косячков">
       <created>1599404596968</created>
@@ -195,27 +198,34 @@
       <option name="project" value="LOCAL" />
       <updated>1599405892185</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="super ultimate commit 3000">
+      <created>1599411822179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1599411822179</updated>
+    </task>
+    <task id="LOCAL-00004" summary="super ultimate commit 3000">
+      <created>1599481615953</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599481615953</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/laravel_blog" />
+    </ignored-roots>
     <MESSAGE value="Исправление косячков" />
     <MESSAGE value="идем дальше" />
-    <option name="LAST_COMMIT_MESSAGE" value="идем дальше" />
+    <MESSAGE value="super ultimate commit 3000" />
+    <option name="LAST_COMMIT_MESSAGE" value="super ultimate commit 3000" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599160524475">
@@ -230,42 +240,37 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="402" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1599389349649" />
-    <state x="234" y="1" key="CommitChangelistDialog2" timestamp="1599405891762">
+    <state x="234" y="1" key="CommitChangelistDialog2" timestamp="1599481673151">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="234" y="1" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1599405891762" />
-    <state x="1600" y="149" key="MergeDialog" timestamp="1599481758062">
-      <screen x="1600" y="0" width="1280" height="1024" />
-    </state>
-    <state x="1600" y="149" key="MergeDialog/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1599481758062" />
-    <state x="346" y="223" key="NewPhpClassDialog" timestamp="1599406487357">
+    <state x="234" y="1" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1599481673151" />
+    <state x="346" y="223" key="NewPhpClassDialog" timestamp="1599499818801">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="346" y="223" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1599406487357" />
-    <state x="461" y="330" key="NewPhpFileDialog" timestamp="1599315419281">
+    <state x="346" y="223" key="NewPhpClassDialog/0.0.1280.800@0.0.1280.800" timestamp="1599499818801" />
+    <state x="461" y="330" key="NewPhpFileDialog" timestamp="1599497547241">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="461" y="330" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1599315419281" />
-    <state x="109" y="31" key="SettingsEditor" timestamp="1599150063235">
+    <state x="461" y="330" key="NewPhpFileDialog/0.0.1280.800@0.0.1280.800" timestamp="1599497547241" />
+    <state x="109" y="31" key="SettingsEditor" timestamp="1599495649343">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="109" y="31" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1599150063235" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1599404599747">
+    <state x="109" y="31" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1599495649343" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1599411824976">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1599404599747" />
-    <state x="2049" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599481741353">
-      <screen x="1600" y="0" width="1280" height="1024" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1599411824976" />
+    <state x="429" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599495266166">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="2049" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1600.860/1600.0.1280.1024@1600.0.1280.1024" timestamp="1599481741353" />
+    <state x="429" y="324" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.800@0.0.1280.800" timestamp="1599495266166" />
     <state x="306" y="157" width="667" height="486" key="find.popup" timestamp="1599410097848">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="306" y="157" width="667" height="486" key="find.popup/0.0.1280.800@0.0.1280.800" timestamp="1599410097848" />
-    <state x="381" y="133" width="838" height="727" key="search.everywhere.popup" timestamp="1599484993470">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1599497715267">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1599410111844" />
-    <state x="381" y="133" width="838" height="727" key="search.everywhere.popup/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1599484993470" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.0.1280.800@0.0.1280.800" timestamp="1599497715267" />
   </component>
 </project>

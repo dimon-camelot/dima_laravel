@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Post;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -25,10 +26,11 @@ class AppServiceProvider extends ServiceProvider
     {
         //Дергаем посты из базы для сайдбара
         \View::composer('layout', function ($view) {
-            $posts = \DB::table('posts')
+            $posts = Post::query()
                 ->limit(5)
                 ->orderByDesc('created_at')
                 ->get();
+
             $view->with('posts', $posts);
         });
     }
