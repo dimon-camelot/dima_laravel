@@ -17,6 +17,8 @@ class PostController extends Controller
 
     public function post($id)
     {
+        $newPostNotify = session()->get('add_comment_notify', false);
+        session()->put('add_comment_notify', false);
         $post = Post::query()->find($id);
 
         if (is_null($post)) {
@@ -29,7 +31,8 @@ class PostController extends Controller
         return view('post')
             ->with('post', $post)
             ->with('category', $category)
-            ->with('comments', $comments);
+            ->with('comments', $comments)
+            ->with('add_comment_notify', $newPostNotify);
     }
 
     public function list()
@@ -41,13 +44,15 @@ class PostController extends Controller
         ]);
     }
 
-    public function add_comment ($id)
+    public function add_comment (Request $request, $id)
     {
        $comment = new Comment();
        $comment->post_id = $id;
-       $comment->author = $_POST['author'];
-       $comment->body = $_POST['body'];
-       $comment->save();
+       $comment->author = $request->get('author');
+       $comment->body = $request->get('body');
+
+       $session = session();
+       $session->put('add_comment_notify', true);
 
        return redirect("/post/$id");
     }
