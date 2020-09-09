@@ -35,13 +35,28 @@ class PostController extends Controller
             ->with('add_comment_notify', $newPostNotify);
     }
 
-    public function list()
+    public function list($pageNumber = 1)
     {
-        $list = Post::query()->get();
 
-        return view('list', [
-            'list' => $list
-        ]);
+        $postsPerPage = 5; //Количество постов на странице
+        $postsAmount = Post::query()->count(); //Количество постов в базе
+        $pagesAmount = (int)ceil($postsAmount / $postsPerPage); //Необходимое количество страниц
+
+        if($pageNumber > $pagesAmount) {
+            abort(404);
+        }
+
+        $list = Post::query()
+            ->offset($pageNumber * $postsPerPage - $postsPerPage)
+            ->limit($postsPerPage)
+            ->get();//Посты выбранной страницы
+
+        return view('list')
+            ->with('list', $list)
+            ->with('pagesAmount', $pagesAmount)
+            ->with('pageNumber', $pageNumber)
+            ->with('bOpen', '@')
+            ->with('bClose', '@');
     }
 
     public function add_comment (Request $request, $id)

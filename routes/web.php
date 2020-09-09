@@ -22,7 +22,7 @@ Route::get('/', function (){
 
 Route::get('/post/{id}', 'PostController@post')->name('show_post');
 
-Route::get('/list', 'PostController@list')->name('show_list');
+Route::get('/list/{pageNumber}', 'PostController@list')->name('show_list');
 
 Route::get('/test', 'TestController@show');
 

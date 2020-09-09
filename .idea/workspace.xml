@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaf31ead-bcc8-437a-ac30-14dd21d90d28" name="Default Changelist" comment="идем дальше">
+    <list default="true" id="eaf31ead-bcc8-437a-ac30-14dd21d90d28" name="Default Changelist" comment="Исправлен косячек с сохранением комментариев в базу, изменен механизм уведомления о создании нового поста">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599551608187</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Исправлен косячек с сохранением комментариев в базу, изменен механизм уведомления о создании нового поста">
+      <created>1599641453032</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1599641453032</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +235,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Исправление косячков" />
     <MESSAGE value="идем дальше" />
-    <option name="LAST_COMMIT_MESSAGE" value="идем дальше" />
+    <MESSAGE value="Исправлен косячек с сохранением комментариев в базу, изменен механизм уведомления о создании нового поста" />
+    <option name="LAST_COMMIT_MESSAGE" value="Исправлен косячек с сохранением комментариев в базу, изменен механизм уведомления о создании нового поста" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599160524475">

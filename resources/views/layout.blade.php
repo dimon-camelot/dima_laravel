@@ -33,7 +33,7 @@
                             <li><a href="{{ route('show_post', ['id' => $post->id]) }}">{{$post->title}}</a></li>
                         @endforeach
                     </ul>
-                    <h6><a href="{{ route('show_list') }}">Все посты</a></h6>
+                    <h6><a href="{{ route('show_list', ['pageNumber' => 1]) }}">Все посты</a></h6>
                 </div>
             </div>
         </div>
