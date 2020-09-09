@@ -38,7 +38,7 @@ class PostController extends Controller
     public function list($pageNumber = 1)
     {
 
-        $postsPerPage = 5; //Количество постов на странице
+        $postsPerPage = 3; //Количество постов на странице
         $postsAmount = Post::query()->count(); //Количество постов в базе
         $pagesAmount = (int)ceil($postsAmount / $postsPerPage); //Необходимое количество страниц
 
@@ -57,7 +57,7 @@ class PostController extends Controller
             ->with('pageNumber', $pageNumber);
     }
 
-    public function add_comment (Request $request, $id)
+    public function add_comment(Request $request, $id)
     {
        $comment = new Comment();
        $comment->post_id = $id;

@@ -20,7 +20,7 @@ Route::get('/', function (){
     return view ('welcome');
 });
 
-Route::get('/post/{id}', 'PostController@post')->name('show_post');
+Route::get('/post/{post}', 'PostController@post')->name('show_post');
 
 Route::get('/list/{pageNumber}', 'PostController@list')->name('show_list');
 

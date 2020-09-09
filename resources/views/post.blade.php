@@ -10,8 +10,8 @@
     <hr>
     <p>Комментарии:</p>
     @foreach($comments as $comment)
-    {{$comment->author}}<br>
-    {{$comment->body}}<br><br>
+        <b>{{$comment->author}}</b><br>
+        <i>{{$comment->body}}</i><br><br>
     @endforeach
     <hr>
     @if($add_comment_notify)

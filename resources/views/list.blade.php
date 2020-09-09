@@ -1,7 +1,7 @@
 @extends('layout')
 
 @section('content')
-    Cтраница: {{$pageNumber}}
+    Cписок постов:
     <hr>
     <ul>
         @foreach($list as $post)
@@ -10,7 +10,11 @@
     </ul>
     <hr>
     @for ($i = 1; $i <= $pagesAmount; $i++)
-        <a href="/list/{{ $i }}"><{{ $i }}></a>
+        @if($i == $pageNumber)
+            <b><a href="/list/{{ $i }}"><{{ $i }}></a></b>
+        @else
+            <a href="/list/{{ $i }}"><{{ $i }}></a>
+        @endif
     @endfor
 
 
