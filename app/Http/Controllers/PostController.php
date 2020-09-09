@@ -18,7 +18,7 @@ class PostController extends Controller
     public function post($id)
     {
         $newPostNotify = session()->get('add_comment_notify', false);
-        session()->put('add_comment_notify', false);
+
         $post = Post::query()->find($id);
 
         if (is_null($post)) {
@@ -50,9 +50,10 @@ class PostController extends Controller
        $comment->post_id = $id;
        $comment->author = $request->get('author');
        $comment->body = $request->get('body');
+       $comment->save();
 
        $session = session();
-       $session->put('add_comment_notify', true);
+       $session->flash('add_comment_notify', true);
 
        return redirect("/post/$id");
     }
