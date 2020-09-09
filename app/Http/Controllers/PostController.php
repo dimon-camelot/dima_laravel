@@ -54,9 +54,7 @@ class PostController extends Controller
         return view('list')
             ->with('list', $list)
             ->with('pagesAmount', $pagesAmount)
-            ->with('pageNumber', $pageNumber)
-            ->with('bOpen', '@')
-            ->with('bClose', '@');
+            ->with('pageNumber', $pageNumber);
     }
 
     public function add_comment (Request $request, $id)
