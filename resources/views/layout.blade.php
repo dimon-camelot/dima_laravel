@@ -20,6 +20,13 @@
             </div>
         </div>
         <div class="row">
+            <div class="col-md-12">
+                <div class="alert alert-secondary">
+                    @auth<a href="/mylogout">Выход</a>@else<a href="/login">Вход</a> / <a href="/register">Регистрация</a>@endauth
+                </div>
+            </div>
+        </div>
+        <div class="row">
             <div class="col-md-8">
                 <div class="alert alert-secondary" style="height: 98%">
                     @yield('content')
