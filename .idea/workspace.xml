@@ -19,15 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eaf31ead-bcc8-437a-ac30-14dd21d90d28" name="Default Changelist" comment="Добавлена работающая пагинация">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-    </list>
+    <list default="true" id="eaf31ead-bcc8-437a-ac30-14dd21d90d28" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -191,6 +183,7 @@
       <workItem from="1599379692019" duration="12280000" />
       <workItem from="1599403245695" duration="7669000" />
       <workItem from="1599752680494" duration="1610000" />
+      <workItem from="1599762810460" duration="259000" />
     </task>
     <task id="LOCAL-00001" summary="Исправление косячков">
       <created>1599404596968</created>
@@ -241,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599666745162</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавлена авторизация, но она пока не особо влияет на что-либо">
+      <created>1599762922120</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1599762922120</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,7 +268,8 @@
     <MESSAGE value="Исправлен косячек с сохранением комментариев в базу, изменен механизм уведомления о создании нового поста" />
     <MESSAGE value="Добавлена пагинация" />
     <MESSAGE value="Добавлена работающая пагинация" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена работающая пагинация" />
+    <MESSAGE value="Добавлена авторизация, но она пока не особо влияет на что-либо" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлена авторизация, но она пока не особо влияет на что-либо" />
   </component>
   <component name="WindowStateProjectService">
     <state x="240" y="65" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599160524475">
@@ -283,10 +284,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="402" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1280.800@0.0.1280.800" timestamp="1599389349649" />
-    <state x="234" y="1" key="CommitChangelistDialog2" timestamp="1599669913154">
+    <state x="234" y="1" key="CommitChangelistDialog2" timestamp="1599763084337">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="234" y="1" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1599669913154" />
+    <state x="234" y="1" key="CommitChangelistDialog2/0.0.1280.800@0.0.1280.800" timestamp="1599763084337" />
     <state x="1600" y="149" key="MergeDialog" timestamp="1599481758062">
       <screen x="1600" y="0" width="1280" height="1024" />
     </state>
@@ -303,10 +304,10 @@
       <screen x="0" y="0" width="1280" height="800" />
     </state>
     <state x="109" y="31" key="SettingsEditor/0.0.1280.800@0.0.1280.800" timestamp="1599150063235" />
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1599666747201">
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2" timestamp="1599762926736">
       <screen x="0" y="0" width="1280" height="800" />
     </state>
-    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1599666747201" />
+    <state x="240" y="140" key="Vcs.Push.Dialog.v2/0.0.1280.800@0.0.1280.800" timestamp="1599762926736" />
     <state x="300" y="151" key="Vcs.Push.Dialog.v2/0.0.1600.860/1600.0.1280.1024@0.0.1600.860" timestamp="1599658850702" />
     <state x="2049" y="425" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599481741353">
       <screen x="1600" y="0" width="1280" height="1024" />
